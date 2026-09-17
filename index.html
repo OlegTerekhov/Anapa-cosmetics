@@ -1,0 +1,1344 @@
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Анапская косметика — уход за лицом, телом, волосами и SPA-ритуалы. Косметика из Анапы, вдохновлённая природой Чёрного моря.">
+<meta name="theme-color" content="#f7f3ed">
+<title>Анапская косметика — красота, которой нравится солнце</title>
+<style>
+:root{
+  --bg:#f7f3ed;
+  --paper:#fffdf9;
+  --ink:#20372F;
+  --muted:#6d786f;
+  --green:#3eb497;
+  --green-dark:#3eb497;
+  --sand:#e8d9c4;
+  --accent:#c98765;
+  --line:#e7e1d8;<!doctype html>
+
+  --shadow:0 18px 50px rgba(38,55,47,.10);
+  --radius:24px;
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.55;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.topline{
+  background:var(--green);
+  color:#fff;
+  padding:9px 0;
+  font-size:13px;
+}
+.topline .container{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+.brand-phrase{
+  padding:90px 0;
+  text-align:center;
+}
+
+.brand-phrase h2{
+  max-width:1000px;
+  margin:0 auto;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(34px,4.5vw,60px);
+  line-height:1.12;
+  letter-spacing:-.04em;
+  color:var(--ink);
+}
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(247,243,237,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(231,225,216,.8);
+}
+.nav{
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+.logo{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:25px;
+  font-weight:700;
+  letter-spacing:-.04em;
+  white-space:nowrap;
+}
+.logo small{
+  display:block;
+  font:10px/1.1 Inter,sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-top:3px;
+}
+nav{
+  display:flex;
+  gap:24px;
+  margin-left:auto;
+}
+nav a{
+  font-size:14px;
+  color:#44534c;
+}
+nav a:hover{color:var(--green)}
+.actions{
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+.icon-btn{
+  border:1px solid var(--line);
+  background:var(--paper);
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  position:relative;
+}
+.count{
+  position:absolute;
+  right:-2px;
+  top:-2px;
+  background:var(--accent);
+  color:#fff;
+  border-radius:50%;
+  font-size:10px;
+  width:18px;
+  height:18px;
+  display:grid;
+  place-items:center;
+}
+.menu{display:none}
+.hero{padding:34px 0 70px}
+.hero-grid{
+  min-height:610px;
+  border-radius:34px;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:.78fr 1.22fr;
+  background:#eadbc7;
+  position:relative;
+}
+.hero-copy{
+  padding:70px;
+  position:relative;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:12px;
+  color:#5f7168;
+  margin-bottom:18px;
+}
+h1,h2,h3{
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.06;
+  margin:0;
+}
+h1{
+  font-size:clamp(48px,5.2vw,76px);
+  letter-spacing:-.055em;
+  max-width:600px;
+}
+.hero-copy p{
+  max-width:510px;
+  color:#53625b;
+  font-size:18px;
+  margin:24px 0 32px;
+}
+  .buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.btn{
+  border:1px solid rgba(255,255,255,.65);
+  border-radius:999px;
+  padding:14px 22px;
+  font-weight:650;
+  transition:.2s;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 0 2px rgba(255,255,255,.16);
+}
+
+.btn-primary{
+  background:var(--green);
+  color:#fff;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  background:var(--green-dark);
+  box-shadow:0 0 0 3px rgba(255,255,255,.22);
+}
+
+.btn-light{
+  background:rgba(255,255,255,.55);
+  border:1px solid rgba(255,255,255,.75);
+  color:var(--green);
+  box-shadow:0 0 0 2px rgba(255,255,255,.18);
+}
+
+.btn-light:hover{
+  background:rgba(255,255,255,.72);
+  transform:translateY(-2px);
+  box-shadow:0 0 0 3px rgba(255,255,255,.25);
+}.btn-primary{
+  background:var(--green);
+  color:#fff;
+}
+.btn-primary:hover{
+  transform:translateY(-2px);
+  background:var(--green-dark);
+}
+.btn-light{
+  background:rgba(255,255,255,.72);
+  border:1px solid rgba(255,255,255,.9);
+  color:var(--green);
+}
+.btn-outline{
+  background:transparent;
+  border:1px solid var(--green);
+  color:var(--green);
+  padding:10px 16px;
+  font-size:13px;
+}
+.btn-outline:hover{
+  background:var(--green);
+  color:#fff;
+}
+.hero-art{
+  min-height:610px;
+  position:relative;
+  overflow:hidden;
+}
+.hero-art img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:end;
+  margin-bottom:34px;
+}
+.section-head h2{
+  font-size:46px;
+  letter-spacing:-.04em;
+  background:rgba(62,180,151,.88);
+  color:#fff;
+  padding:14px 28px;
+  border-radius:20px;
+  display:inline-block;
+  border:1px solid rgba(255,255,255,.65);
+  box-shadow:0 0 0 2px rgba(255,255,255,.16);
+}
+.section-head p{
+  max-width:520px;
+  color:var(--muted);
+  margin:0;
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
+}
+.product{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:22px;
+  overflow:hidden;
+  position:relative;
+  transition:.2s;
+}
+.product:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+}
+.product-media{
+  height:375px;
+  background:linear-gradient(145deg,#eee6db,#d9e1d9);
+  position:relative;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  padding:12px;
+}
+.product:nth-child(2n) .product-media{
+  background:linear-gradient(145deg,#e8dfd2,#e3d5d2);
+}
+.pack{
+  width:92px;
+  height:170px;
+  border-radius:17px 17px 13px 13px;
+  background:linear-gradient(90deg,#f4eadf,#fffdf8 50%,#d7c5ad);
+  box-shadow:14px 20px 35px rgba(30,45,39,.18);
+  position:relative;
+}
+.pack:before{
+  content:"";
+  position:absolute;
+  width:50px;
+  height:25px;
+  left:21px;
+  top:-20px;
+  border-radius:5px 5px 2px 2px;
+  background:#315b4d;
+}
+.pack:after{
+  content:"АК\A АНАПА";
+  white-space:pre;
+  position:absolute;
+  left:12px;
+  right:12px;
+  top:66px;
+  text-align:center;
+  font:700 9px/1.4 Georgia,serif;
+  color:#315b4d;
+  border-top:1px solid #d7cbbb;
+  border-bottom:1px solid #d7cbbb;
+  padding:8px 0;
+}
+.tag{
+  position:absolute;
+  top:14px;
+  left:14px;
+  background:rgba(255,255,255,.8);
+  border-radius:999px;
+  padding:6px 10px;
+  font-size:11px;
+  z-index:2;
+}
+.heart{
+  position:absolute;
+  top:12px;
+  right:12px;
+  border:0;
+  background:#fff;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  z-index:2;
+}
+.product-info{padding:18px}
+.product-info h3{
+  font:700 18px/1.25 Georgia,serif;
+  margin-bottom:8px;
+  min-height:46px;
+}
+.product-info p{
+  font-size:13px;
+  color:var(--muted);
+  min-height:42px;
+  margin:0 0 14px;
+}
+.price-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-bottom:10px;
+}
+.price{
+  font-weight:800;
+  font-size:18px;
+}
+.buy{
+  border:1px solid rgba(255,255,255,.65);
+  background:var(--green);
+  color:#fff;
+  border-radius:999px;
+  padding:10px 14px;
+  font-size:12px;
+  box-shadow:0 0 0 2px rgba(62,180,151,.18);
+  transition:.2s;
+}
+.buy:hover{
+  transform:translateY(-1px);
+  box-shadow:0 0 0 2px rgba(62,180,151,.28);
+}
+.buy-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:8px;
+}
+.buy-links a{
+  font-size:11px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--green);
+  transition:.15s;
+}
+.buy-links a:hover{
+  border-color:var(--green);
+  background:#f4f8f5;
+}
+.buy-links a.btn-ozon{
+  background:#005bff;
+  color:#fff;
+  border:2px solid #000;
+}
+.buy-links a.btn-ozon:hover{
+  background:#0047cc;
+  border-color:#000;
+  color:#fff;
+}
+.buy-links a.btn-site{
+  background:#3CB371;
+  color:#fff;
+  border:2px solid #000;
+}
+.buy-links a.btn-site:hover{
+  background:#2e8b57;
+  border-color:#000;
+  color:#fff;
+}
+.story{
+  background:rgba(62,180,151,.88);
+  color:#fff;
+  border-radius:34px;
+  padding:70px;
+  margin-top:60px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.story h2{font-size:54px}
+.story p{
+  color:#d8e1dc;
+  font-size:17px;
+}
+.facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.fact{
+  border:1px solid rgba(255,255,255,.32);
+  border-radius:20px;
+  padding:24px;
+  background:rgba(20,55,47,.18);
+  backdrop-filter:blur(6px);
+}
+.fact strong{
+  display:block;
+  font:28px Georgia,serif;
+  margin-bottom:7px;
+}
+.fact span{
+  color:#cbd8d1;
+  font-size:13px;
+}
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.contact-card{
+  padding:35px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:25px;
+}
+.contact-card h3{
+  font-size:30px;
+  margin-bottom:15px;
+}
+.contact-card p{color:var(--muted)}
+.map{
+  min-height:330px;
+  border-radius:25px;
+  background:linear-gradient(135deg,#d4dfd6,#c7d2c8);
+  position:relative;
+  overflow:hidden;
+}
+.map:before{
+  content:"";
+  position:absolute;
+  inset:15% 0 0 20%;
+  background:
+    repeating-linear-gradient(25deg,transparent 0 32px,rgba(255,255,255,.65) 33px 36px),
+    repeating-linear-gradient(115deg,transparent 0 45px,rgba(70,95,82,.18) 46px 48px);
+  transform:rotate(-8deg);
+}
+.pin{
+  position:absolute;
+  left:52%;
+  top:48%;
+  font-size:42px;
+  filter:drop-shadow(0 5px 5px rgba(0,0,0,.2));
+}
+footer{
+  padding:55px 0 30px;
+  background:var(--green);
+  color:#dce5df;
+  margin-top:80px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:35px;
+}
+.footer-title{
+  font:24px Georgia,serif;
+  color:#fff;
+}
+.footer-phrase{
+  padding:10px 0 55px;
+  margin-bottom:40px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.footer-phrase h2{
+  max-width:900px;
+  margin:0;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(32px,4vw,52px);
+  line-height:1.12;
+  letter-spacing:-.04em;
+  font-weight:400;
+  color:#fff;
+}
+.footer-col h4{
+  color:#fff;
+  margin:0 0 12px;
+}
+.footer-col a{
+  display:block;
+  color:#fff;
+  font-size:13px;
+  margin:8px 0;
+}
+.copyright{
+  border-top:1px solid rgba(255,255,255,.12);
+  margin-top:35px;
+  padding-top:20px;
+  color:#fff;
+  font-size:12px;
+}
+.drawer{
+  position:fixed;
+  inset:0;
+  z-index:100;
+  background:rgba(25,38,33,.45);
+  display:none;
+}
+.drawer.open{display:block}
+.drawer-panel{
+  position:absolute;
+  right:0;
+  top:0;
+  height:100%;
+  width:min(480px,100%);
+  background:var(--paper);
+  padding:30px;
+  overflow:auto;
+  box-shadow:-20px 0 50px rgba(0,0,0,.15);
+}
+.drawer-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.drawer h2{font-size:34px}
+.close{
+  border:0;
+  background:#eee;
+  border-radius:50%;
+  width:38px;
+  height:38px;
+}
+.cart-item{
+  display:grid;
+  grid-template-columns:65px 1fr auto;
+  gap:12px;
+  align-items:center;
+  padding:16px 0;
+  border-bottom:1px solid var(--line);
+}
+.mini-pack{
+  height:65px;
+  width:65px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:4px;
+}
+
+.mini-pack img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}.cart-total{
+  display:flex;
+  justify-content:space-between;
+  font-size:20px;
+  font-weight:800;
+  padding:22px 0;
+}
+.modal{
+  position:fixed;
+  inset:0;
+  z-index:110;
+  background:rgba(25,38,33,.5);
+  display:none;
+  place-items:center;
+  padding:20px;
+}
+.modal.open{display:grid}
+.modal-box{
+  width:min(470px,100%);
+  background:var(--paper);
+  border-radius:28px;
+  padding:32px;
+  max-height:90vh;
+  overflow:auto;
+}
+.modal-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:30px;
+}
+.large-pack{
+  min-height:320px;
+  background:linear-gradient(145deg,#e9dfd2,#d2dfd5);
+  border-radius:22px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+}
+.large-pack .pack{transform:scale(1.35)}
+.toast{
+  position:fixed;
+  bottom:22px;
+  left:50%;
+  transform:translate(-50%,20px);
+  background:#20372f;
+  color:#fff;
+  padding:13px 18px;
+  border-radius:999px;
+  opacity:0;
+  pointer-events:none;
+  transition:.25s;
+  z-index:200;
+  font-size:13px;
+}
+.toast.show{
+  opacity:1;
+  transform:translate(-50%,0);
+}
+@media(max-width:980px){
+  nav{display:none}
+  .menu{display:grid}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{min-height:430px}
+  .hero-copy{padding:50px}
+  .products{grid-template-columns:repeat(2,1fr)}
+  .story,.contact{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .container{width:min(100% - 24px,var(--max))}
+  .topline .container{font-size:11px}
+  .topline .container span:last-child{display:none}
+  .nav{min-height:68px;gap:10px}
+  .logo{font-size:21px}
+  .actions{margin-left:auto}
+  .hero{padding:15px 0 40px}
+  .hero-copy{padding:42px 25px 20px}
+  h1{font-size:48px}
+  .hero-art{min-height:300px}
+  .section-head{display:block}
+  .section-head h2{font-size:38px;margin-bottom:12px}
+  .products{grid-template-columns:1fr}
+  .product-media{height:230px}
+  .story{
+    padding:30px 22px;
+    border-radius:25px;
+  }
+  .story h2{font-size:38px}
+  .facts{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .modal-grid{grid-template-columns:1fr}
+  .large-pack{min-height:260px}
+}
+  #products .section-head{
+  display:block;
+  text-align:center;
+}
+  #products .section-head h2{
+  text-align:center;
+  margin:0 0 25px;
+}
+  #contacts .section-head{
+  display:block;
+  text-align:center;
+}
+ #contacts .section-head h2{
+  text-align:center;
+}
+}
+html, body{min-height:100%;}
+body{
+  position:relative;
+  background:transparent !important;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-10;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(247,243,237,.15),rgba(247,243,237,.15)),
+    url("https://avatars.mds.yandex.net/get-maps-adv-crm/11387709/2a0000018f200c6846cb5317184a9d1b533b/landing_background");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+  section{background:transparent !important;}
+header{background:rgba(247,243,237,.78) !important;}
+.hero-grid{background:rgba(234,219,199,.82) !important;}
+</style>
+</head>
+<body>
+<div class="topline">
+  <div class="container">
+    <span>Натуральная косметика из солнечной Анапы</span>
+    <span>Доставка по России · Фирменный магазин в Анапе</span>
+  </div>
+</div>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#top">
+      Анапская косметика
+      <small>красота в гармонии с природой</small>
+    </a>
+    <nav>
+      <a href="catalog.html">Каталог</a>
+      <a href="#about">О бренде</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="actions">
+      <button class="icon-btn menu" aria-label="Меню"
+        onclick="toast('Используйте разделы каталога ниже')">☰</button>
+      <button class="icon-btn" aria-label="Корзина" onclick="openCart()">
+        🛒
+        <span class="count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          Анапа · Чёрное море · натуральная косметика
+        </div>
+        <h1>
+          Красота,<br>
+          которой нравится солнце.
+        </h1>
+        <p>
+          Косметика, созданная в Анапе и вдохновлённая природой
+          Чёрного моря. Ежедневный уход для лица, тела, волос
+          и домашних SPA-ритуалов.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="catalog.html">
+  Смотреть каталог
+       </a>
+          <a class="btn btn-light" href="#about">
+            Философия бренда
+          </a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img
+          src="hero-anapa.png"
+          alt="Анапская косметика — из Анапы прямо к вам"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<section id="products">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow"></div>
+        <h2>Популярные средства</h2>
+      </div>
+
+    </div>
+   <div class="products" id="productGrid"></div>
+    <div style="text-align:center; margin:40px 0 20px;">
+  <a class="btn btn-primary" href="catalog.html" style="padding:14px 44px; min-width:280px;">Весь каталог</a>
+</div>
+  </div>
+</section>
+<section id="about">
+  <div class="container">
+    <div class="story">
+      <div>
+        <div class="eyebrow" style="color:#bcd0c5">Философия</div>
+        <h2>
+          Гармония природы и современных технологий ухода.
+        </h2>
+        <p>
+          «Анапская косметика» создана с верой в естественную красоту
+          и силу природного ухода. В философии бренда — простота,
+          забота о себе и сочетание природных компонентов
+          с современными технологиями.
+        </p>
+        <p>
+          Бренд связан с городом-курортом Анапа и атмосферой
+          Черноморского побережья.
+        </p>
+      </div>
+     <div class="facts">
+        <div class="fact">
+          <strong>Природа</strong>
+          <span>Растительные экстракты, водоросли и другие компоненты.</span>
+        </div>
+        <div class="fact">
+          <strong>Черное море</strong>
+          <span>Косметика, вдохновлённая морем, солнцем и курортной природой.</span>
+        </div>
+        <div class="fact">
+          <strong>Бережность</strong>
+          <span>Ежедневный уход с акцентом на комфорт кожи.</span>
+        </div>
+        <div class="fact">
+          <strong>Качество</strong>
+          <span>Современные формулы и контроль качества производства.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contacts">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Мы рядом</div>
+        <h2>Фирменный магазин в Анапе</h2>
+      </div>
+      <p>
+        
+      </p>
+    </div>
+    <div class="contact">
+      <div class="contact-card">
+        <h3>Анапа, Астраханская, 99</h3>
+        <p>
+          ТРЦ «Красная площадь». Фирменный магазин
+          «Анапская косметика».
+        </p>
+        <p>
+          <strong>Телефон:</strong><br>
+          <a href="tel:+78001014569">8 800 101-45-69</a>
+        </p>
+        <p>
+          <strong>Режим работы:</strong><br>
+          Ежедневно. Перед визитом лучше уточнить актуальное расписание.
+        </p>
+        <a class="btn btn-primary" href="tel:+78001014569">
+          Позвонить
+        </a>
+      </div>
+      <div class="map" aria-label="Схематичная карта Анапы">
+        <div class="pin">📍</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<section class="brand-phrase">
+  <div class="container">
+    <h2><br></h2>
+  </div>
+</section>
+<footer>
+  <div class="container">
+
+    <div class="footer-phrase">
+      <h2>
+        Всё лучшее, что дарит южное солнце,<br>
+        мы превращаем в вашу красоту☀️
+      </h2>
+    </div>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-title">Анапская косметика</div>
+        <p style="color:#fff;font-size:13px;max-width:300px">
+          Красота, вдохновлённая солнцем, морем и природой черноморского побережья.
+        </p>
+      </div>
+
+     <div class="footer-col">
+       <h4>Навигация</h4>
+       <a href="catalog.html">Каталог</a>
+       <a href="index.html#about">О бренде</a>
+       <a href="index.html#contacts">Контакты</a>
+     </div>
+
+      <div class="footer-col">
+        <h4>Покупателям</h4>
+        <a href="#products">Все средства</a>
+        <a href="#" onclick="openCart();return false;">Корзина</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <a href="tel:+78001014569">8 800 101-45-69</a>
+        <a href="#contacts">Анапа, Астраханская, 99</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2026 «Анапская косметика». Все права защищены.
+    </div>
+
+  </div></footer>
+<div class="drawer" id="cartDrawer"
+  onclick="if(event.target===this)closeCart()">
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <h2>Корзина</h2>
+      <button class="close" onclick="closeCart()">×</button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-total">
+      <span>Итого</span>
+      <span id="cartTotal">0 ₽</span>
+    </div>
+    <button class="btn btn-primary" style="width:100%" onclick="checkout()">
+      Оформить заказ
+    </button>
+    <p style="font-size:12px;color:var(--muted)">
+      В этой версии оформление заказа демонстрационное.
+    </p>
+  </div>
+</div>
+<div class="modal" id="productModal"
+  onclick="if(event.target===this)closeProduct()">
+  <div class="modal-box" id="modalContent"></div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const products = [
+  {
+  id:1,
+  cat:'face',
+  name:'Энзимная пудра для умывания с витамином C',
+  desc:'Энзимный уход с папаином и производной витамина C. Деликатное очищение и обновление.',
+  price:999,
+  volume:'150 мл',
+  sku:'330115',
+  img:'https://fitstyle.ru/wp-content/uploads/2024/03/glavnaya-novaya-optimized.png',
+  site:'https://fitstyle.ru/product/enzimnaya-pudra-dlya-umyvaniya-s-vitaminom-s-150-ml',
+  ozon:'https://www.ozon.ru/product/enzimnaya-pudra-dlya-umyvaniya-s-vitaminom-c-anapskaya-kosmetika-150-ml-myagkiy-skrab-piling-1476021437/?at=1o6l1SzL7zm-9voeooWRFZws_PLbVkVb&sh=iG8gcDpKeQ',
+  wb:''
+},
+  {
+    id:2,
+    cat:'face',
+    name:'Глубоко увлажняющая сыворотка с водорослями и молочными пептидами',
+    desc:'Увлажняющая сыворотка для ежедневного ухода за кожей лица.',
+    price:1399,
+    volume:'30 мл',
+    sku:'330009',
+    img:'https://fitstyle.ru/wp-content/uploads/2023/10/glavnaya-novaya-optimized.png',
+    site:'https://fitstyle.ru/product/uvlazhnyayushhaya-syvorotka-dlya-licza-s-vorodoroslyami-i-molochnymi-peptidami-30-ml',
+    ozon:'https://www.ozon.ru/product/uvlazhnyayushchaya-syvorotka-dlya-litsa-s-niatsinamidom-vodoroslyami-i-molochnymi-1250558233/?_bctx=CAMQ8_iVMA&at=1oel1ZzJ34vPzCmlNLW3jTNLqwQki8Gq&sh=iG8gcPqHHA',
+    wb:''
+  },
+ {
+  id:3,
+  cat:'face',
+  name:'Себорегулирующая сыворотка с водорослями, ниацинамидом и цинком',
+  desc:'Уход для проблемной кожи: себорегуляция и комфорт.',
+  price:1299,
+  volume:'30 мл',
+  sku:'330023',
+  img:'https://ir.ozone.ru/s3/multimedia-1-o/wc1000/7582960788.jpg',
+  site:'https://fitstyle.ru/product/syvorotka-dlya-problemnoi-kozhi-seboreguliruushaya-s-vorodoroslyami-niacinamidom-i-cinkom-30-ml',
+  ozon:'https://www.ozon.ru/product/uvlazhnyayushchaya-syvorotka-dlya-litsa-s-niatsinamidom-vodoroslyami-i-molochnymi-1250558233/?_bctx=CAMQ8_iVMA&at=1oel1YZZLgo0jEWlRD1q11CBdu-FZehQ&sh=iG8gcJ0DuQ',
+  wb:''
+},
+  {
+    id:4,
+    cat:'face',
+    name:'Крем для лица матирующий с лизатами бактерий и скваланом',
+    desc:'Увлажняющий крем со скваланом и цинком PCA.',
+    price:1599,
+    volume:'30 мл',
+    img:'https://fitstyle.ru/wp-content/uploads/2023/10/glavnaya-novaya-1-optimized.png',
+    sku:'330016',
+    site:'https://fitstyle.ru/product/krem-dlya-licza-matiruyushhij-s-lizatami-bakterii-30-ml',
+    ozon:'https://www.ozon.ru/product/krem-dlya-litsa-matiruyushchiy-s-lizatami-bakteriy-i-skvalanom-uvlazhnyayushchiy-30-ml-1250329205/?at=1oel1OnvkPXxx-zEtVgL3S7vq533xBYC&sh=iG8gcEiR_w',
+    wb:''
+  },
+  {
+    id:5,
+    cat:'face',
+    name:'Пенка для умывания с экстрактом красного вина',
+    desc:'Мягкое очищение кожи лица с экстрактом красного вина.',
+    price:499,
+    volume:'150 мл',
+    sku:'330443',
+    img:'https://fitstyle.ru/wp-content/uploads/2025/11/glavnaya-novaya1-optimized.png',
+    site:'https://fitstyle.ru/product/penka-dlya-umyvaniya-s-ekstraktom-krasnogo-vina-150-ml',
+    ozon:'https://www.ozon.ru/product/penka-dlya-umyvaniya-ochishchayushchaya-s-ekstraktom-krasnogo-vina-150-ml-1942329709/?at=1oel1SIvfURMxGZ7M6Iv0f6WgCYWnoAf&sh=iG8gcJrsJg',
+    wb:''
+  },
+  {
+    id:6,
+    cat:'face',
+    name:'Увлажняющая пенка для умывания с экстрактом зелёного чая',
+    desc:'Мягкое ежедневное очищение и увлажняющий уход.',
+    price:499,
+    volume:'150 мл',
+    sku:'330450',
+    img:'https://fitstyle.ru/wp-content/uploads/2025/11/glavnaya-novaya-1-optimized.png',
+    site:'https://fitstyle.ru/product/uvlazhnyayushhaya-penka-dlya-umyvaniya-s-ekstraktom-zelenogo-chaya-150-ml',
+    ozon:'https://www.ozon.ru/product/penka-dlya-umyvaniya-uvlazhnyayushchaya-s-zelenym-chaem-150-ml-1942348370/?at=1oel1QFiUnEkPty0QFz7LQ9CbiXWoiNz&sh=iG8gcJrsJg',
+    wb:''
+  },
+  {
+    id:7,
+    cat:'body',
+    name:'Сахарный скраб для тела «Клубничный чизкейк»',
+    desc:'Деликатное отшелушивание и приятный аромат.',
+    price:599,
+    volume:'250 г',
+    sku:'330283',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/05/glavnaya-5-optimized.png',
+    site:'https://fitstyle.ru/product/saharnyi-scrub-dlya-tela-kiubnichnyi-chizkeik-250-gr',
+    ozon:'https://www.ozon.ru/product/skrab-dlya-tela-saharnyy-klubnichnyy-chizkeyk-s-maslami-i-vitaminom-e-piling-uhod-za-telom-250-gr-1567534968/?at=1oel1YvacRRDi0Xh3aPa6-Ww0Ka72flP&sh=iG8gcJrsJg',
+    wb:''
+  },
+  {
+    id:8,
+    cat:'body',
+    name:'Крем-молочко для тела с алоэ, облепихой и пантенолом',
+    desc:'Мягкое увлажнение, питание и комфорт кожи тела.',
+    price:499,
+    volume:'150 мл',
+    sku:'330252',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/05/glavnaya-3-optimized.png',
+    site:'https://fitstyle.ru/product/krem-molochko-dlya-tela-s-aloe-oblepihoi-i-pantenolom-150-ml',
+    ozon:'https://www.ozon.ru/product/krem-molochko-dlya-tela-regeneriruyushchee-loson-s-aloe-oblepihoy-i-d-pantenolom-posle-zagara-150-ml-1567385494/?at=1oel1S0UhsbCjXCiA33eveQQmGyjcPfW&sh=iG8gcJrsJg',
+    wb:''
+  },
+  {
+    id:9,
+    cat:'body',
+    name:'Солевой скраб для тела «Упругость»',
+    desc:'Скраб на основе соли для домашнего ухода.',
+    price:549,
+    volume:'—',
+    sku:'330306',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/08/glavnaya-1-optimized.png',
+    site:'https://fitstyle.ru/product/solevoj-skrab-dlya-tela-uprugost',
+    ozon:'https://www.ozon.ru/product/solevoy-skrab-dlya-tela-antitsellyulitnyy-uprugost-250-gr-1567779995/?at=1oel1Pj4F19wLb743PGcTSEGAvLtN4AX&sh=iG8gcJXvVA',
+    wb:''
+  },
+  {
+    id:10,
+    cat:'body',
+    name:'Крем для рук с экстрактом водорослей и лизатами бактерий',
+    desc:'Питательный и увлажняющий уход за кожей рук.',
+    price:599,
+    volume:'150 мл',
+    sku:'330245',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/05/glavnaya-1-optimized.png',
+    site:'https://fitstyle.ru/product/krem-dlya-ruk-s-ekstraktom-vodoroslei-i-lizatami-bakterii-150-ml',
+    ozon:'https://www.ozon.ru/product/krem-dlya-ruk-uvlazhnyayushchiy-s-dozatorom-s-ekstraktom-vodorosley-ekstraktom-vina-i-1567380275/?at=1oel1VC0Buz5TvjVfVKd6uH6_Z4HiZsF&sh=iG8gcJXvVA',
+    wb:''
+  },
+  {
+    id:11,
+    cat:'body',
+    name:'Крем-молочко для тела с розмарином и эфирным маслом апельсина',
+    desc:'Тонизирующий уход для мягкости и тонуса.',
+    price:499,
+    volume:'150 мл',
+    sku:'330269',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/05/glavnaya-4-optimized.png',
+    site:'https://fitstyle.ru/product/krem-molochko-dlya-tela-s-ecstractom-rozmarina-i-efirnym-maslom-apelsina150-ml',
+    ozon:'https://www.ozon.ru/product/krem-molochko-dlya-tela-toniziruyushchee-loson-uvlazhnyayushchiy-s-ekstraktom-rozmarina-i-efirnym-1567425350/?at=1oel1RSLt5rcf6Ylzk5dE5lU7L8LXsOh&sh=iG8gcHnRZA',
+    wb:''
+  },
+  {
+    id:12,
+    cat:'body',
+    name:'Крем-молочко для тела с экстрактами водорослей и амаранта',
+    desc:'Увлажняющий и смягчающий уход.',
+    price:499,
+    volume:'150 мл',
+    sku:'330184',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/05/glavnaya-2-optimized.png',
+    site:'https://fitstyle.ru/product/molochko-dlya-tela-s-ekstraktom-vodoroslej-i-amaranta-150-ml',
+    ozon:'https://www.ozon.ru/product/krem-molochko-dlya-tela-uvlazhnyayushchee-parfyumirovannoe-loson-s-ekstraktom-vodorosley-amaranta-i-1567376415/?at=1oil1ZvLVQTnBOrb88qo5I84LrcjmqBh&sh=iG8gcJoDgQ',
+    wb:''
+  },
+  {
+    id:13,
+    cat:'spa',
+    name:'Соль для ванны «7 трав»',
+    desc:'Морская соль с комплексом трав для расслабляющего ритуала.',
+    price:0,
+    volume:'—',
+    sku:'—',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/08/glavnaya-4-optimized.png',
+    site:'https://fitstyle.ru/product/sol-dlya-vann-7-trav',
+    ozon:'https://www.ozon.ru/product/sol-dlya-vann-morskaya-s-travami-350-gr-1567872312/?at=1oel1Pm_FZVuU8YlthBqSVGnoaSZoAw0&sh=iG8gcJXvVA',
+    wb:''
+  },
+  {
+    id:14,
+    cat:'face',
+    name:'Гидрофильное масло для жирной и комбинированной кожи',
+    desc:'Очищение кожи и снятие стойкого макияжа.',
+    price:1299,
+    volume:'150 мл',
+    sku:'330108',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/02/glavnaya-novaya-2-optimized.png',
+    site:'https://fitstyle.ru/product/gidrofilnoe-maslo-dlya-zhyrnoi-i-kombinirovannoi-kozhi-150-ml',
+    ozon:'https://www.ozon.ru/product/gidrofilnoe-maslo-dlya-umyvaniya-zhirnoy-i-kombinirovannoy-kozhi-snyatie-stoykogo-makiyazha-150-ml-1421544012/?at=1oil1_-puZq_HYDCMRnRh6y0uBTh207y&sh=iG8gcJoDgQ',
+    wb:''
+  },
+  {
+    id:15,
+    cat:'body',
+    name:'Крем-молочко для тела увлажняющее парфюмированное',
+    desc:'Уход с экстрактами водорослей и амаранта.',
+    price:499,
+    volume:'150 мл',
+    sku:'330184',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/05/glavnaya-2-optimized.png',
+    site:'https://fitstyle.ru/product/molochko-dlya-tela-s-ekstraktom-vodoroslej-i-amaranta-150-ml',
+    ozon:'https://www.ozon.ru/product/krem-molochko-dlya-tela-uvlazhnyayushchee-parfyumirovannoe-loson-s-ekstraktom-vodorosley-amaranta-i-1567376415/?at=1oil1XU2I0NHrsfF7mBFxv6dqM29lhOr&sh=iG8gcJoDgQ',
+    wb:''
+  },
+  {
+    id:16,
+    cat:'hair',
+    name:'Кератиновая сыворотка для волос',
+    desc:'Интенсивное восстановление сухих, повреждённых и окрашенных волос.',
+    price:0,
+    volume:'—',
+    sku:'—',
+    img:'https://fitstyle.ru/wp-content/uploads/2024/08/glavnaya-novaya-optimized.png',
+    site:'https://fitstyle.ru/product/syvorotka-dlya-volos-keratinovaya-dlya-vseh-tipov-volos',
+    ozon:'',
+    wb:''
+  }
+];
+
+let cart = JSON.parse(localStorage.getItem('anapa_cart') || '[]');
+const rub = n => n ? n.toLocaleString('ru-RU') + ' ₽' : 'Цена уточняется';
+
+function categoryName(cat){
+  return {face:'Лицо',body:'Тело',spa:'SPA',hair:'Волосы'}[cat] || cat;
+}
+
+function buyLinksHtml(p){
+  let html = '';
+  if(p.site) html += `<a class="btn-site" href="${p.site}" target="_blank" rel="noopener">Сайт</a>`;
+  if(p.ozon) html += `<a class="btn-ozon" href="${p.ozon}" target="_blank" rel="noopener">Ozon</a>`;
+  if(p.wb) html += `<a href="${p.wb}" target="_blank" rel="noopener">Wildberries</a>`;
+  return html ? `<div class="buy-links">${html}</div>` : '';
+}
+
+function renderProducts(){
+  const grid = document.getElementById('productGrid');
+  const list = products.slice(0, 5);
+  grid.innerHTML = list.map(p => `
+    <article class="product">
+     <div class="product-media">
+  <span class="tag">${categoryName(p.cat)}</span>
+  <button class="heart" aria-label="Добавить в избранное" onclick="toast('Добавлено в избранное')">♡</button>
+  ${p.img
+    ? `<img src="${p.img}" alt="${p.name}" style="max-width:100%;max-height:100%;object-fit:contain;display:block;">`
+    : `<div class="pack"></div>`}
+</div>
+      <div class="product-info">
+        <h3>${p.name}</h3>
+        <p>${p.desc}</p>
+        <div class="price-row">
+          <span class="price">${rub(p.price)}</span>
+          <button class="buy" onclick="addToCart(${p.id})">${p.price ? 'В корзину' : 'Подробнее'}</button>
+        </div>
+        ${buyLinksHtml(p)}
+        <button style="border:0;background:none;padding:10px 0 0;color:var(--green);font-size:12px" onclick="openProduct(${p.id})">
+          Подробнее о продукте →
+        </button>
+      </div>
+    </article>
+  `).join('');
+}
+
+function addToCart(id){
+  const p = products.find(x => x.id === id);
+  if(!p.price){
+    openProduct(id);
+    return;
+  }
+  const item = cart.find(x => x.id === id);
+  if(item) item.qty++;
+  else cart.push({id,qty:1});
+  saveCart();
+  toast('Товар добавлен в корзину');
+}
+
+function saveCart(){
+  localStorage.setItem('anapa_cart',JSON.stringify(cart));
+  renderCart();
+  document.getElementById('cartCount').textContent = cart.reduce((s,x) => s + x.qty, 0);
+}
+
+function renderCart(){
+  const el = document.getElementById('cartItems');
+  if(!cart.length){
+    el.innerHTML = '<p style="color:var(--muted);padding:30px 0">Корзина пока пуста.</p>';
+    document.getElementById('cartTotal').textContent = '0 ₽';
+    return;
+  }
+  let total = 0;
+  el.innerHTML = cart.map(i => {
+    const p = products.find(x => x.id === i.id);
+    total += p.price * i.qty;
+    return `
+  <div class="cart-item">
+    <div class="mini-pack">
+      <img src="${p.img}" alt="${p.name}">
+    </div>
+    <div>
+      <strong>${p.name}</strong>
+          <div style="font-size:12px;color:var(--muted)">
+            ${p.price.toLocaleString('ru-RU')} ₽ × ${i.qty}
+          </div>
+        </div>
+        <button class="close" onclick="removeFromCart(${p.id})">×</button>
+      </div>
+    `;
+  }).join('');
+  document.getElementById('cartTotal').textContent = rub(total);
+}
+
+function removeFromCart(id){
+  cart = cart.filter(x => x.id !== id);
+  saveCart();
+}
+
+function openCart(){
+  document.getElementById('cartDrawer').classList.add('open');
+  renderCart();
+}
+
+function closeCart(){
+  document.getElementById('cartDrawer').classList.remove('open');
+}
+
+function openProduct(id){
+  const p = products.find(x => x.id === id);
+  document.getElementById('modalContent').innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+      <span class="eyebrow">${categoryName(p.cat).toUpperCase()}</span>
+      <button class="close" onclick="closeProduct()">×</button>
+    </div>
+    <div class="large-pack">
+  ${p.img
+    ? `<img src="${p.img}" alt="${p.name}" style="width:100%;height:100%;object-fit:contain;display:block;margin:auto;">`
+    : `<div class="pack"></div>`}
+</div>
+      <div>
+        <h2 style="font-size:32px;margin-bottom:12px">${p.name}</h2>
+        <p style="color:var(--muted)">${p.desc}</p>
+        <p>
+          <strong>Объём:</strong> ${p.volume}<br>
+          <strong>Артикул:</strong> ${p.sku}
+        </p>
+        <h3 style="font:700 28px Georgia,serif;margin:16px 0">${rub(p.price)}</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px">
+          ${p.price ? `<button class="btn btn-primary" onclick="addToCart(${p.id});closeProduct()">Добавить в корзину</button>` : ''}
+          ${p.site ? `<a class="btn btn-outline" href="${p.site}" target="_blank" rel="noopener">Купить на сайте</a>` : ''}
+        </div>
+        ${buyLinksHtml(p)}
+      </div>
+    </div>
+  `;
+  document.getElementById('productModal').classList.add('open');
+}
+
+function closeProduct(){
+  document.getElementById('productModal').classList.remove('open');
+}
+
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(window.tt);
+  window.tt = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function checkout(){
+  if(!cart.length){
+    toast('Добавьте товары в корзину');
+    return;
+  }
+  toast('Демо-оформление: подключите реальный checkout');
+}
+
+renderProducts();
+renderCart();
+</script>
+</body>
+</html>
